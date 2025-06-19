@@ -1,0 +1,70 @@
+.itc-accordion-item {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    color: #434343;
+    border: 1px solid #E8E8E8;
+    padding: 25px;
+    border-radius: 20px;
+    line-height: 130%;
+}
+.itc-accordion{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.accordion__text
+{
+  margin: 0;
+}
+.itc-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #434343;
+  font-weight: 500;
+  background-color: transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+  
+}
+
+.itc-accordion-header::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  filter: invert(100%);
+  content: "";
+  transition: transform 0.2s ease-out;
+}
+
+.itc-accordion-item-show .itc-accordion-header::after,
+.itc-accordion-item-slidedown .itc-accordion-header::after {
+  transform: rotate(-180deg);
+}
+
+.itc-accordion-header:hover {
+  color: darkblue;
+}
+
+.itc-accordion-item:not(.itc-accordion-item-show) .itc-accordion-header {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.itc-accordion-content {
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.itc-accordion-item:not(.itc-accordion-item-show) .itc-accordion-body {
+  display: none;
+}
