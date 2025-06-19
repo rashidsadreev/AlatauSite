@@ -236,7 +236,7 @@ main{
     background-image: url("../img/index/map\ background.png");
     background-position: right;
     background-repeat:  no-repeat;
-    background-size:  54% auto;
+    background-size: 54% auto;
 
 }
 .district__container
@@ -303,7 +303,6 @@ main{
 {
     position: relative;
     width: 60%;
-    height: 600px;
     cursor: pointer;
 }
 .map__point__text
