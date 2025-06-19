@@ -19,6 +19,12 @@
             <div class="header__content">
                 <nav class="nav">
                     <ul class="nav__list">
+                        <li class="nav__item nav__item_search">
+                            <form class="search__form">
+                                <input type="text" placeholder="Поиск" class="search__input">
+                                <img src="img/index/icon_search.svg" alt="Поиск" class="search__icon">
+                            </form>
+                        </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">Об Алатау</a>
                         </li>
@@ -34,23 +40,53 @@
                         <li class="nav__item">
                             <a href="#" class="nav__link">Контакты</a>
                         </li>
+                        <li class="nav__item nav__item_contact">
+                            <ul class="contact__list">
+                                <li class="contact__item">
+                                    <img class="contact__img" src="img/index/icon_youtube.png" alt="">
+                                </li>
+                                <li class="contact__item">
+                                    <img class="contact__img" src="img/index/icon_linkedin.png" alt="">
+                                </li>
+                                <li class="contact__item">
+                                    <img class="contact__img" src="img/index/icon_instagram.png" alt="">
+                                </li>
+                                <li class="contact__item">
+                                    <img class="contact__img" src="img/index/icon_facebook.png" alt="">
+                                </li>
+                                <li class="contact__item">
+                                    <img class="contact__img" src="img/index/icon_telegram.png" alt="">
+                                </li>
+                                
+                            </ul>
+                           
+                        </li>
+                        <li class="nav__item_btn">
+                             <button class="controls__btn">Связаться с нами</button>
+                        </li>
                     </ul>
                 </nav>
-                <ul class="controls__list">
-                    <li class="controls__item">
+                <ul class="controls__list ">
+                    <li class="controls__item controls_search">
                         <img src="img/index/search_button.png" alt="">
                     </li>
                     <li class="controls__item">
                         <img src="img/index/eye_button.png" alt="">
                     </li>
+                    <li class="controls__item controls_logo">
+                        <img src="img/index/Logo.png" alt="">
+                    </li>
                     <li class="controls__item controls__item_flex">
                         <p>RU</p>
                         <img src="img/index/icon_arrow_down.png" alt="">
                     </li>
-                    <li class="controls__item">
+                    <li class="controls__item controls__item_btn">
                         <button class="controls__btn">Связаться с нами</button>
                     </li>
                 </ul>
+                <div class="burger" onclick="burgerClick()">
+                    
+                </div>
             </div>
         </div>
     </header>
@@ -312,6 +348,6 @@
     <script src="js/animated-accordion.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/map-color.js"></script>
-
+    <script src="js/burger.js"></script>
 </body>
 </html>
