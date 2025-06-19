@@ -299,10 +299,11 @@ main{
     gap: 10px;
 }
 
-.district__map 
+.district__map
 {
-    width: 60%;
     position: relative;
+    width: 60%;
+    height: 600px;
     cursor: pointer;
 }
 .map__point__text
@@ -315,6 +316,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
+ 
 #green
 {
     position: absolute;
@@ -403,6 +405,12 @@ main{
         opacity: 0;
     }
 }
+.map{
+    position: sticky;
+    top: 10px;
+}
+
+
 .map path {
   transition: fill 0.3s ease;
 }

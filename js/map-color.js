@@ -91,7 +91,6 @@ function toggleDistrict(key) {
     path.style.fill = color;
     updatePointsVisibility(pointId);
     accordionInstance.show(accordionItem);
-    accordionItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
     currentActiveKey = key;
   }
 }
