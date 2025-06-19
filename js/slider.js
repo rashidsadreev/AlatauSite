@@ -4,8 +4,8 @@ const leftBtn = document.querySelector('.slider__btn_left');
 const rightBtn = document.querySelector('.slider__btn_right');
 
 const images = [
-    '../img/index/hero-block_bg.png',
-    '../img/index/city3.jpg'
+    "url('../img/index/hero-block_bg.png')",
+    "url('../img/index/city3.jpg')"
 ];
 
 let index = 0;
